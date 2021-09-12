@@ -1,0 +1,20 @@
+/* Палитра цветов */
+:root {
+	--background-color: #ffffff;
+	--text-color: #757575;
+	--text-secondary-color: #2f303a;
+	--selection-color: #2196f3;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	link-decoration: none;
+}
