@@ -2,19 +2,221 @@
 :root {
 	--background-color: #ffffff;
 	--text-color: #757575;
-	--text-secondary-color: #2f303a;
+  --text-secondary-color: #212121;
+	--background-secondary-color: #2f303a;
 	--selection-color: #2196f3;
 }
 
+/* Общие настройки */
 body {
 	background-color: var(--background-color);
 	color: var(--text-color);
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
 a {
 	text-decoration: none;
 }
 
-ul {
-	link-style: none;
+/* Шапка сайта */
+.header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  color: var(--text-secondary-color);
+}
+
+.nav-logo {
+  color: #000000;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.nav-logo>span {
+  color: var(--selection-color);
+}
+
+.nav-link {
+  color: var(--text-secondary-color);
+}
+
+.contact-link {
+  color: var(--text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--selection-color);
+}
+
+/* Герой */
+.hero-section {
+  background-color: var(--background-secondary-color);
+}
+
+.hero-section-heading {
+  color: #ffffff;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-section-button {
+  color: #ffffff;
+  background-color: var(--selection-color);
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
+/* Преимущества */
+.advantage-list {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.advantage-heading {
+  color: var(--text-secondary-color);
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Наши занятия */
+.work-section-heading {
+  color: var(--text-secondary-color);
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.team-section {
+  background-color: #f5f4fa;
+}
+
+.team-section-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+
+.team-section-item-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.team-section-heading,
+.team-section-item-heading {
+  color: var(--text-secondary-color);
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: var(--background-secondary-color);
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-logo,
+.footer-address {
+  color: #ffffff;
+}
+
+.footer-logo>span {
+  color: var(--selection-color);
+}
+
+.footer-link {
+  color: var(--text-color);
+  
+  font-style: normal;
+}
+
+/* Цвет заголовков */
+.header-color {
+  color: var(--text-secondary-color);
+}
+
+.btn {
+  background-color: #f5f4fa;
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--selection-color);
+  color: #ffffff;
+}
+
+.project-cards h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.project-cards p {
+  font-size: 16px;
+  line-height: 30px;
 }
